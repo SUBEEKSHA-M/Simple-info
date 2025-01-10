@@ -1,8 +1,8 @@
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault(); 
 
-        const sectionId = this.getAttribute('href').substring(1); // Get the target section ID
+        const sectionId = this.getAttribute('href').substring(1); 
         const targetSection = document.getElementById(sectionId);
 
         if (targetSection) {
